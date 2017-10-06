@@ -1,0 +1,47 @@
+<ion-menu [content]="content" swipeEnabled="false">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <head> <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> </head>
+
+  <ion-content class="background">
+      <div class = "icon">
+          <button class = "profilebutton" menuClose (click)="showConfirm()">
+            <img src = "assets/imgs/profile.jpg" alt ="picture mo to">
+          </button>
+      </div>
+      <div class = "name">
+          <h3> <strong> Romie Santiago </strong> </h3>
+          <p> 1411831 </p>
+          <p> Computer Engineering <br> Department </p>
+      </div>
+      <div class = "buttons">
+         <ion-list>
+              <ion-item style="background-color: rgba(0,0,0,0.15)">
+                Options
+              </ion-item>
+              <button ion-item menuClose (click)="schedule()">
+                Schedule Appointment
+              </button>
+              <button ion-item>
+                View Available Schedule
+              </button>
+              <button ion-item>
+                Help
+              </button>
+              <button menuClose ion-item (click)="feedback()">
+                Feedback
+              </button>
+              <button menuClose ion-item (click)="showConfirm()">
+                Log out
+              </button>
+         </ion-list>
+      </div>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar >
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content fullscreen>
+    <div>
+      <img src = "assets/imgs/coverphoto.jpg">
+    </div>
+ 
+    <ion-card *ngFor="let card of cards">
+ 
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="https://avatars.io/facebook/womiewey" />
+        </ion-avatar>
+        <h2>Romie Santiago</h2>
+        <p>August 22, 2017</p>
+      </ion-item>
+ 
+      <img src="http://placehold.it/500x200" />
+ 
+      <ion-card-content>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      </ion-card-content>
+ 
+      
+    </ion-card>
+ 
+</ion-content>

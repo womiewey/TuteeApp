@@ -1,0 +1,23 @@
+<ion-content>
+  
+  <div class = "loginblock">
+    <div class = "logo">
+      <img src = "assets/imgs/logo.jpg" alt = "Ace Tutors">
+     </div>
+    <ion-list no-line>
+      <ion-item>
+        <ion-label floating> Email </ion-label>
+        <ion-input type = "email"> </ion-input>
+      </ion-item>
+    <ion-item>
+      <ion-label floating> Password </ion-label>
+      <ion-input type = "password"> </ion-input>
+    </ion-item>
+    <button ion-button block (click) = "login()">
+      Log in
+    </button>
+    </ion-list>
+    <button (click) = "signup()"> No account yet? Sign up </button>
+  </div>
+
+</ion-content>

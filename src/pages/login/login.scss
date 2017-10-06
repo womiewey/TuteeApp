@@ -1,0 +1,15 @@
+page-login {
+    .logo{
+        background-image : "../assets/imgs/logo.jpg";
+        width: 100%;
+        
+    }
+    .loginblock{
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        position: fixed;
+    }
+}
